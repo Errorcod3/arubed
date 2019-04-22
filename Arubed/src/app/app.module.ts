@@ -31,11 +31,12 @@ import { MouseOverDirective } from './mouse-over.directive';
     SortPipe,
     FeaturedAnimationComponent,
     MouseOverDirective,
-    FormsModule
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
