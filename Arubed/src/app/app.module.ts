@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -15,6 +15,8 @@ import { FilterPipe } from './filter.pipe';
 import { SortPipe } from './sort.pipe';
 import { FeaturedAnimationComponent } from './featured-animation/featured-animation.component';
 import { MouseOverDirective } from './mouse-over.directive';
+import { Validators } from '@angular/forms'
+
 
 @NgModule({
   declarations: [
@@ -30,12 +32,13 @@ import { MouseOverDirective } from './mouse-over.directive';
     FilterPipe,
     SortPipe,
     FeaturedAnimationComponent,
-    MouseOverDirective,
-    FormsModule
+    MouseOverDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    Validators
   ],
   providers: [],
   bootstrap: [AppComponent]
